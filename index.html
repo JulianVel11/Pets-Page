@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mascotas</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+    <main class="main-content">
+
+        <section class="hero-section">
+            <div class="navbar-container">
+                <div class="nav-links">
+                    <div class="logo-link">
+                        <h2>Logo</h2>
+                    </div>
+                    <ul>
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 2</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="hero-content-container">
+                <div class="hero-card-information">
+                    <div class="hero-card-text">
+                        <h1>Bienvenido a Pet Palace</h1>
+                        <p>El Criadero líder de la región con más de 15 años de experiencia, en donde podrás recibir nuestra asesoria gratuita por parte de nuestros especialistas y encontrar tu mascota ideal hoy!</p>
+                        <button class="hero-btn" type="button">Quiero comprar mi mascota!</button>
+                    </div>
+                    <div class="hero-card-media">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="hero-card-overview">
+                    <div class="overview-card canines-tag">
+                        <h3>Caninos</h3>
+                        <img class="canines-tag-bg" src="./images/dog-portrait.webp" alt="Imagen de canino">
+                    </div>
+                    <div class="overview-card felines-tag">
+                        <h3>Felinos</h3>
+                        <img class="canines-tag-bg" src="./images/cat-portrait.webp" alt="Imagen de felino">
+                    </div>
+                    <div class="overview-card promotion-tag">
+                        <h3>Conoce nuestras ofertas!</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="data-container">
+                <!-- hacer un slider que contenga informacion varia sobre el local -->
+                <!-- con iconos y una descripcion breve -->
+                <i class="fa-solid fa-shield-dog"></i>
+                <div class="description-container"></div>
+            </div>
+        </section>
+
+        <section class="services-section">
+            <div class="service-card pet-card">
+                <i class="fa-solid fa-paw"></i>
+                <h4>Conoce a nuestros cachorros!</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, adipisci!</p>
+                <button type="button" class="services-btn">Contactanos hoy!</button>
+            </div>
+            <div class="service-card educational-card">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <h4>Conoce mas sobre tu mascota con nosotros!</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, adipisci!</p>
+                <button type="button" class="services-btn">Contactanos hoy!</button>
+            </div>
+            <div class="service-card health-card">
+                <i class="fa-solid fa-user-nurse"></i>
+                <h4>Agenda tu cita con nuestros veterinaios hoy!</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, adipisci!</p>
+                <button type="button" class="services-btn">Contactanos hoy!</button>
+            </div>
+        </section>
+
+        <section class="products-section">
+            <h4>Nuestros productos destacados</h4>
+            <div class="products-container">
+                <div class="product-card-animated">
+                    <div class="product-card-image">
+                        <img src="./images/cat-portrait.webp" alt="Producto">
+                      <button type="button" class="product-btn">Comprar</button>
+                    </div>
+                    <div class="product-card-name">
+                      <p><span>Collar para perros - 25cm - Rojo</span></p>
+                    </div>
+                    <div class="product-card-price">
+                      <p><span>$25,000</span></p>
+                    </div>
+                </div>
+                <div class="product-card-animated">
+                    <div class="product-card-image">
+                        <img src="./images/cat-portrait.webp" alt="Producto">
+                      <button type="button" class="product-btn">Comprar</button>
+                    </div>
+                    <div class="product-card-name">
+                      <p><span>Collar para perros - 25cm - Rojo</span></p>
+                    </div>
+                    <div class="product-card-price">
+                      <p><span>$25,000</span></p>
+                    </div>
+                </div>
+                <div class="product-card-animated">
+                    <div class="product-card-image">
+                        <img src="./images/cat-portrait.webp" alt="Producto">
+                      <button type="button" class="product-btn">Comprar</button>
+                    </div>
+                    <div class="product-card-name">
+                      <p><span>Collar para perros - 25cm - Rojo</span></p>
+                    </div>
+                    <div class="product-card-price">
+                      <p><span>$25,000</span></p>
+                    </div>
+                </div>
+                <div class="product-card-animated">
+                    <div class="product-card-image">
+                        <img src="./images/cat-portrait.webp" alt="Producto">
+                      <button type="button" class="product-btn">Comprar</button>
+                    </div>
+                    <div class="product-card-name">
+                      <p><span>Collar para perros - 25cm - Rojo</span></p>
+                    </div>
+                    <div class="product-card-price">
+                      <p><span>$25,000</span></p>
+                    </div>
+                </div>
+                <div class="product-card-animated">
+                    <div class="product-card-image">
+                        <img src="./images/cat-portrait.webp" alt="Producto">
+                      <button type="button" class="product-btn">Comprar</button>
+                    </div>
+                    <div class="product-card-name">
+                      <p><span>Collar para perros - 25cm - Rojo</span></p>
+                    </div>
+                    <div class="product-card-price">
+                      <p><span>$25,000</span></p>
+                    </div>
+                </div>
+                <div class="product-card-animated">
+                    <div class="product-card-image">
+                        <img src="./images/cat-portrait.webp" alt="Producto">
+                      <button type="button" class="product-btn">Comprar</button>
+                    </div>
+                    <div class="product-card-name">
+                      <p><span>Collar para perros - 25cm - Rojo</span></p>
+                    </div>
+                    <div class="product-card-price">
+                      <p><span>$25,000</span></p>
+                    </div>
+                </div>
+                <div class="product-card-animated">
+                    <div class="product-card-image">
+                        <img src="./images/cat-portrait.webp" alt="Producto">
+                      <button type="button" class="product-btn">Comprar</button>
+                    </div>
+                    <div class="product-card-name">
+                      <p><span>Collar para perros - 25cm - Rojo</span></p>
+                    </div>
+                    <div class="product-card-price">
+                      <p><span>$25,000</span></p>
+                    </div>
+                </div>
+                <div class="product-card-animated">
+                    <div class="product-card-image">
+                        <img src="./images/cat-portrait.webp" alt="Producto">
+                      <button type="button" class="product-btn">Comprar</button>
+                    </div>
+                    <div class="product-card-name">
+                      <p><span>Collar para perros - 25cm - Rojo</span></p>
+                    </div>
+                    <div class="product-card-price">
+                      <p><span>$25,000</span></p>
+                    </div>
+                </div>
+                <div class="product-card-animated">
+                    <div class="product-card-image">
+                        <img src="./images/cat-portrait.webp" alt="Producto">
+                      <button type="button" class="product-btn">Comprar</button>
+                    </div>
+                    <div class="product-card-name">
+                      <p><span>Collar para perros - 25cm - Rojo</span></p>
+                    </div>
+                    <div class="product-card-price">
+                      <p><span>$25,000</span></p>
+                    </div>
+                </div>
+                <div class="product-card-animated">
+                    <div class="product-card-image">
+                        <img src="./images/cat-portrait.webp" alt="Producto">
+                      <button type="button" class="product-btn">Comprar</button>
+                    </div>
+                    <div class="product-card-name">
+                      <p><span>Collar para perros - 25cm - Rojo</span></p>
+                    </div>
+                    <div class="product-card-price">
+                      <p><span>$25,000</span></p>
+                    </div>
+                </div>
+                <div class="product-card-animated">
+                    <div class="product-card-image">
+                        <img src="./images/cat-portrait.webp" alt="Producto">
+                      <button type="button" class="product-btn">Comprar</button>
+                    </div>
+                    <div class="product-card-name">
+                      <p><span>Collar para perros - 25cm - Rojo</span></p>
+                    </div>
+                    <div class="product-card-price">
+                      <p><span>$25,000</span></p>
+                    </div>
+                </div>
+                <div class="product-card-animated">
+                    <div class="product-card-image">
+                        <img src="./images/cat-portrait.webp" alt="Producto">
+                      <button type="button" class="product-btn">Comprar</button>
+                    </div>
+                    <div class="product-card-name">
+                      <p><span>Collar para perros - 25cm - Rojo</span></p>
+                    </div>
+                    <div class="product-card-price">
+                      <p><span>$25,000</span></p>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="families-section">
+            <h4>Conoce a nuestras familias</h4>
+            <!-- Esto tiene que ser un slider -->
+            <div class="families-showcase-container">
+                <div class="family-one family-card-showcase"></div>
+                <div class="family-two family-card-showcase"></div>
+                <div class="family-three family-card-showcase"></div>
+                <div class="family-four family-card-showcase"></div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="footer-information-container">
+           <div class="footer-logo-container">
+                <h2>Pet Palace</h2>
+           </div>
+           <div class="footer-contact-information">
+                <h5>Contactanos</h5>
+                <p><span>311-1212-1212</span></p>
+                <p><span>informacion@petpalace.com</span></p>
+                <p><span>Calle 13 #11-18 | Cogua | Cundinamarca | Colombia</span></p>
+            </div>
+            <div class="footer-products-information">
+                <h5>Productos</h5>
+                <p><span>Caninos</span></p>
+                <p><span>Felinos</span></p>
+                <p><span>Nuestras promociones</span></p>
+            </div>
+            <div id="map" class="map">
+            </div>
+           <div class="footer-rights-container">
+                <p><span>Todos los derechos reservados | Pet Palace® 2024 | Desarrollado por 💮</span></p>
+           </div>
+        </div>
+    </footer>
+
+    <script src="./js/app.js" defer></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="./js/gsap.min.js"></script>
+    <script src="./js/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</body>
+</html>
