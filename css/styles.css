@@ -11,798 +11,720 @@ body{
     background: #f3f3f3;
 }
 .main-content{
-    max-width: 1300px;
-    min-width: 336px;
+    max-width: 1500px;
+    min-width: 430px;
     margin: auto;
 }
-.hero-section{
-    min-height: 1050px;
-    max-height: 1050px;
-    height: 90vh;
+.navbar-container{
+    height: auto;
+    min-height: 70px;
     width: 100%;
+    background-color: rgb(32, 32, 32);
+    padding: 2rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.navbar-container .logo-container{
+    height: 100%;
+    width: 25%;
+}
+.navbar-container .logo-container h1{
+    font-family: Montserrat;
+    font-size: 2rem;
+    font-weight: 800;
+    color: rgb(255, 248, 220);
+}
+.navbar-container .nav-links{
+    height: 100%;
+    width: 75%;
+}
+.navbar-container .nav-links li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar-container .nav-links a{
+    font-family: Roboto;
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.hero-container{
+    min-height: 990px;
+    max-height: 990px;
+    width: 100%;
+    margin-top: 2rem;
     display: grid;
     grid-template-columns: repeat(14, 1fr);
-    grid-template-rows: repeat(10, 1fr);
+    grid-template-rows: repeat(8, 1fr);
     gap: 1rem;
 }
-.hero-section .navbar-container{
-    height: auto;
-    width: 100%;
-    background: rgb(32, 32, 32);
-    padding: 1rem;
+.hero-container .hero-information-container{
+    grid-column: 1/9;
+    grid-row: 1/9;
+    background-color: rgb(255, 255, 255);
+    box-shadow: -4px 4px 0px 0px rgba(0, 0, 0, 0.29);
+    border: 3px solid #252525;
     border-radius: 10px;
-    grid-column: 1 / 15;
-    grid-row: 1 / 2;
-}
-.nav-links{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.nav-links ul{
-    max-width: 600px;
-    width: 40vw;
-    display: flex;
-    align-items: center ;
-    justify-content: space-between;
-    list-style: none;
-    
-}
-.nav-links .logo-link h2{
-    font-family: Roboto;
-    font-size: 1.2em;
-    font-weight: 800;
-    color: #fff;
-}
-.nav-links ul li a{
-    font-family: Roboto;
-    font-size: 0.9em;
-    font-weight: 500;
-    text-decoration: none;
-    color: #fff;
-}
-.hero-section .hero-content-container{
-    min-height: 705px;
-    max-height: 705px;
-    height: 60vh;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    gap: 2rem;
-    grid-column: 1 / 15;
-    grid-row: 2 / 9;
-}
-.hero-content-container .hero-card-information{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     gap: 1rem;
-    border-radius: 10px;
-    grid-column: 1 / 7;
-    grid-row: 1 / 7;
-    background: #fff;
-    box-shadow: -4px 4px 0px 0px rgba(0, 0, 0, 0.29);
-    border: 2px solid #252525;
-    padding: 3rem 3rem 1rem 3rem;
 }
-.hero-card-information .hero-card-text{
+.hero-information-container .hero-information{
+    padding: 0 2rem;
+}
+.hero-information-container .information h1{
+    font-family: Montserrat;
+    font-size: 4rem;
+    font-weight: 900;
+    text-align: center;
+    color: rgb(0, 0, 0);  
+}
+.hero-information-container .information{
+    grid-column: span 1;
+    grid-row: span 5;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     justify-content: space-evenly;
-    grid-column: 1/1;
-    grid-row: 1/4;
+    align-items: center;
 }
-.hero-card-information .hero-card-text h1{
-    font-family: Montserrat;
-    font-size: 2.5rem;
-    font-weight: 800;
-    color: #000;
-}
-.hero-card-information .hero-card-text p{
+.hero-information-container .information p{
     font-family: Roboto;
-    font-size: 1.3rem;
-    font-weight: 500;
-    color: #3a3a3a;
+    font-size: 1.7rem;
+    font-weight: 600;
+    text-align: justify;
+    color: rgb(58, 58, 58); 
 }
-.hero-card-information .hero-card-text .hero-btn{
+.hero-information-container .information button{
     font-family: Roboto;
-    font-size: 1.2rem;
-    font-weight: 500;
-    color: #3a3a3a;
-    padding: 1rem 2rem;
-    background: #FFD700;
+    font-size: 1.7rem;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(58, 58, 58); 
     border: 2px solid #252525;
     border-radius: 10px;
+    background-color: transparent;
     box-shadow: -4px 4px 0px 0px rgba(0, 0, 0, 0.29);
     cursor: pointer;
-    transition: 0.5s;
+    padding: 2rem 4rem;
 }
-.hero-card-information .hero-card-media{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    border: 2px solid #252525;
-    border-radius: 10px;
-    grid-column: 1/1;
-    grid-row: 4/5;
-}
-.hero-card-media a{
-    font-size: 2.3rem;
-    color: #000000;
-    text-decoration: none;
-}
-.hero-content-container .hero-card-overview{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    gap: 1rem;
-    padding: 1rem;
-    border-radius: 10px;
-    grid-column: 7 / 11;
-    grid-row: 1 / 7;
-    box-shadow: -4px 4px 0px 0px rgba(0,0,0,0.29);
-    border: 2px solid #252525;
-    background-color: #ffffff;
-}
-.hero-card-overview .overview-card img{
-    height: 200px;
-    width: 200px;
-}
-.hero-card-overview .overview-card{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid #252525;
+.hero-information-container .media{
     grid-column: span 1;
     grid-row: span 1;
-    cursor: pointer;
-    border-radius: 10px;
-    font-family: Montserrat;
-    font-size: 1.9rem;
-    font-weight: 800;
-    color: #000000;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-    background-color: #FFD700;
-}
-.hero-card-overview .overview-card h3{
-    position: absolute;
-    transition: transform 1.5s;
-    z-index: 2;
-}
-.hero-card-overview .overview-card.hover h3 {
-    transform: translateX(300%);
-}
-.hero-card-overview .overview-card.hover .canines-tag-bg{
-    bottom: 0;
-}
-.hero-card-overview .overview-card.hover .felines-tag-bg{
-    bottom: 0;
-}
-.hero-card-overview .canines-tag-bg{
-    height: 100%;
-    width: 100%;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    bottom: -100%;
-    transition: 1s;
-}
-.hero-card-overview .felines-tag-bg{
-    height: 100%;
-    width: 100%;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    bottom: -100%;
-    transition: 1s;
-}
-.hero-card-overview .promotion-tag{
-    background: url(../images/offers-hero-image.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: none;
-    color: #f3f3f3;
-}
-.data-container{
-    min-height: 215px;
-    max-height: 215px;
-    width: 100%;
-    background: rgb(32, 32, 32);
-    padding: 1rem;
-    border-radius: 10px;
-    grid-column: 1 / 15;
-    grid-row: 9 / 13;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 1rem;
-}
-.data-container i{
-    font-size: 3rem;
-    color: #FFD700;
-    text-decoration: none;
-}
-.data-container .description-container{
-    height: 70%;
-    width: 100%;
-    padding: 1rem;
-    border: 2px solid #fff;
-    border-radius: 10px;
-    font-family: Roboto;
-    font-size: 1.3rem;
-    font-weight: 500;
-    color: #fff;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.services-section{
-    min-height: 575px;
-    max-height: 575px;
-    height: auto;
-    width: 100%;
-    margin-top: 1rem;
     display: grid;
-    grid-template-columns: repeat(15, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+}
+.media .media-icon-holder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.media .media-icon-holder i{
+    font-size: 3.5rem;
+}
+.hero-container .hero-cards-container{
+    grid-column: 9/15;
+    grid-row: 1/9;
+    display: grid;
+    grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
     gap: 1rem;
 }
-.services-section .service-card{
-    height: 100%;
-    width: 100%;
+.hero-cards-container .hero-card{
+    grid-column: span 1;
+    grid-row: span 1;
+    background-color: rgb(255, 248, 220);
+    box-shadow: -4px 4px 0px 0px rgba(0, 0, 0, 0.29);
+    border: 3px solid #252525;
+    border-radius: 10px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2px solid #252525;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.hero-cards-container .hero-card h3{
+    font-family: Montserrat;
+    font-size: 3.5rem;
+    font-weight: 800;
+    text-align: center;
+    color: rgb(0, 0, 0);  
+    position: absolute;
+    transition: transform 1s;
+}
+.hero-card img{
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    bottom: -120%;
+    transition: 0.7s;
+}
+.hero-card.hover img{
+    bottom: -10%;
+}
+.hero-card.hover h3{
+    transform: translateX(200%);
+}
+.offers-card.hover h3{
+    transform: translateX(150%);
+}
+.general-information-container{
+    min-height: 300px;
+    max-height: 300px;
+    width: 100%;
+    background-color: rgb(32, 32, 32);
     border-radius: 10px;
-    box-shadow: -4px 4px 0px 0px rgba(0, 0, 0, 0.29);
-    transition: 0.6s ease-in;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
     gap: 1rem;
     padding: 1rem;
+}
+.general-information-container .icon-container{
+    grid-column: span 1;
+    grid-row: span 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.general-information-container .icon-container i{
+    font-size: 5rem;
+    color: rgb(255, 225, 93); 
+}
+.general-information-container .paragraph-container{
+    grid-column: span 1;
+    grid-row: span 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    font-family: Roboto;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: justify;
+    color: rgb(255, 255, 255); 
+    text-align: center;
+}
+.services-container{
+    min-height: 650px;
+    max-height: 650px;
+    width: 100%;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 1rem;
+}
+.services-container .service-card{
+    grid-column: span 1;
+    grid-row: span 1;
+    box-shadow: -4px 4px 0px 0px rgba(0, 0, 0, 0.29);
+    border: 3px solid #252525;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    gap: 2rem;
+    transition: 1s;
+}
+.service-card i{
+    font-size: 5rem;
+    color: rgb(255, 255, 255); 
 }
 .service-card h4{
     font-family: Montserrat;
-    font-size: 1.2rem;
+    font-size: 2rem;
     font-weight: 800;
-    color: #000;
     text-align: center;
-}
-.service-card i{
-    font-size: 3.5rem;
-    color: #fff;
-    text-decoration: none;
+    color: rgb(0, 0, 0); 
 }
 .service-card p{
     font-family: Roboto;
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-weight: 500;
-    color: #3a3a3a;
     text-align: center;
+    color: rgb(58, 58, 58); 
 }
-.service-card .services-btn{
+.service-card button{
     font-family: Roboto;
-    font-size: 1rem;
-    font-weight: 500;
-    color: #f3f3f3;
-    padding: 0.5rem 1.5rem;
-    background: #000;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(58, 58, 58); 
+    border: 2px solid #252525;
     border-radius: 10px;
+    background-color: rgb(243, 243, 243);
+    box-shadow: -4px 4px 0px 0px rgba(0, 0, 0, 0.29);
     cursor: pointer;
+    padding: 1rem 2rem;
 }
-.services-section .pet-card{
-    grid-row: 1 / 4;
-    grid-column: 1 / 6;
-    border-radius: 10px;
-    box-shadow: -4px 4px 0px 0px rgba(0, 0, 0, 0.29);
-}
-.services-section .educational-card{
-    grid-row: 1 / 4;
-    grid-column: 6 / 11;
-    border-radius: 10px;
-    box-shadow: -4px 4px 0px 0px rgba(0, 0, 0, 0.29);
-}
-.services-section .health-card{
-    grid-row: 1 / 4;
-    grid-column:11 / 16;
-    border-radius: 10px;
-    box-shadow: -4px 4px 0px 0px rgba(0, 0, 0, 0.29);
-}
-
-.products-section{
-    min-height: 1000px;
-    max-height: 1000px;
-    height: 90vh;
+.products-container{
+    min-height: 1350px;
+    max-height: 1350px;
     width: 100%;
-    margin: 2rem 0;
-}
-.products-section h4{
-    height: auto;
-    font-family: Roboto;
-    font-size: 1.8rem;
-    font-weight: 800;
-    color: #000;
-    text-align: center;
-    margin-bottom: 1rem;
-}
-.products-section .products-container{
-    height: 93%;
-    width: 100%;
+    margin-top: 2rem;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    gap:1rem;
-}
-.product-card-animated{
-    min-width: 205px;
-    height: 100%;
-    grid-column: span 1;
-    grid-row: span 1;
-    background-color: #ffffff;
-    border-radius: 10px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(9, 1fr);
-    overflow: hidden;
-    box-shadow: -4px 4px 0px 0px rgba(0,0,0,0.29);
-    border: 2px solid #000000;
-}
-.product-card-animated .product-card-image{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-column: span 1;
-    grid-row: 1/7;
-    background: url(front-view-cute-dog-costume.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    border-bottom: 1px solid #3a3a3a;
-    border-top: none;
-    border-right: none;
-    border-left: none;
-}
-.product-card-animated .product-card-image .product-btn{
-    position: absolute;
-    font-family: Roboto;
-    bottom:-100%;
-    transition: 0.6s;
-    z-index: 1;
-    font-size: 1.2rem;
-    font-weight: 500;
-    color: #f3f3f3;
-    padding: 0.5rem 1.5rem;
-    background: #000;
-    border-radius: 10px;
-    cursor: pointer;
-    border: none;
-}
-.product-card-animated:hover .product-btn{
-    bottom: 10%;
-}
-.product-card-animated .product-card-name{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Montserrat;
-    font-size: 1.1rem;
-    font-weight: 700;
-    text-align: center;
-    grid-column: span 1;
-    grid-row: 7/9;
-    background-color: #FFF;
-    z-index: 2;
-    color: #3a3a3a;
-    padding:1rem;
-}
-.product-card-animated .product-card-price{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Roboto;
-    font-size: 1.2rem;
-    font-weight: 800;
-    text-align: center;
-    grid-column: span 1;
-    grid-row: 9/10;
-    background-color: #FFF;
-    z-index: 2;
-    
-}
-
-.families-section{
-    max-height: 350px;
-    height: auto;
-    width: 100%;
-}
-.families-section h4{
-    height: auto;
-    font-family: Roboto;
-    font-size: 1.8em;
-    font-weight: 800;
-    color: #000;
-    text-align: center;
-    margin-bottom: 1rem;
-}
-.families-section .families-showcase-container{
-    height: 90%;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(2, 1fr);
     gap: 1rem;
 }
-.families-section .families-showcase-container .family-card-showcase{
-    min-height: 300px;
-    border: 2px solid #252525;
+.products-container .product-card{
+    grid-column: span 1;
+    grid-row: span 1;
+    background-color: rgb(32, 32, 32);
     border-radius: 10px;
+}
+.families-container{
+    min-height: 430px;
+    max-height: 430px;
+    width: 100%;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+.families-container .family-card{
+    height: 430px;
+    min-width: 300px;
+    max-width: 300px;
     box-shadow: -4px 4px 0px 0px rgba(0, 0, 0, 0.29);
-    grid-column: span 2;
-    grid-row: span 2;
+    border: 3px solid #252525;
+    border-radius: 10px;
+    margin: 0 1rem;
+    overflow: hidden;
 }
-.families-section .families-showcase-container .family-one{
-    background: url(../images/family-1.jpg);
-    background-position-x: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+.family-card img{
+    height: 100%;
+    width: 100%;
 }
-.families-section .families-showcase-container .family-two{
-    background: url(../images/family-2.jpg);
-    background-position-x: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.families-section .families-showcase-container .family-three{
-    background: url(../images/family-3.jpg);
-    background-position-x: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.families-section .families-showcase-container .family-four{
-    background: url(../images/family-4.jpg);
-    background-position-x: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
 footer{
+    height: 30vh;
     min-height: 450px;
     max-height: 450px;
-    height: 35vh;
     width: 100%;
-    background-color: #252525;
+    background-color: rgb(32, 32, 32);
     border-radius: 10px;
-    padding: 1rem;
-    margin:1rem auto auto auto;
-    max-width: 1300px;
-    min-width: 336px;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
 }
-footer .footer-information-container{
+.footer-information-container{
     height: 100%;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 2fr 2fr 1fr;
-    gap: 1rem ;
+    gap: 1rem;
 }
-footer .footer-information-container .footer-logo-container{
+.footer-logo-container{
+    grid-column: 1/4;
+    grid-row: span 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    grid-column: 1 / 4;
-    grid-row: span 1;
+}
+.footer-logo-container h2{
     font-family: Montserrat;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 800;
-    color: #ffffff;
+    color: rgb(255, 225, 93);
     text-align: center;
 }
-footer .footer-information-container .footer-contact-information,.footer-products-information,.map{
+.footer-contact-information{
+    text-align: center;
+    grid-column: span 1;
     grid-row: span 2;
-}
-.footer-information-container .footer-contact-information,.footer-products-information{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
-    border-right: 2px solid #dedede;
-    padding: 0 1rem;
+    justify-content: space-evenly;
+    align-items:center;
+    border-top: none;
+    border-right: 3px solid rgb(58, 58, 58);
+    border-bottom: none;
+    border-left: none;
+    padding: 1rem;
 }
-.footer-information-container .footer-contact-information h5{
+.footer-contact-information h5{
     font-family: Roboto;
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     font-weight: 800;
-    color: #ffffff;
-    text-align: justify;
+    color: rgb(255, 248, 220);
 }
-.footer-information-container .footer-contact-information p{
+.footer-contact-information p{
     font-family: Roboto;
-    font-size: 1rem;
-    font-weight: 600;
-    color: #dedede;
-    text-align: justify;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
 }
-.footer-information-container .footer-products-information h5{
+.footer-products-information{
+    text-align: center;
+    grid-column: span 1;
+    grid-row: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: none;
+    border-right: 3px solid rgb(58, 58, 58);
+    border-bottom: none;
+    border-left: none;
+    padding: 1rem;
+}
+.footer-products-information h5{
     font-family: Roboto;
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     font-weight: 800;
-    color: #ffffff;
-    text-align: justify;
+    color: rgb(255, 248, 220);
 }
-.footer-information-container .footer-products-information p{
+.footer-products-information p{
     font-family: Roboto;
-    font-size: 1rem;
-    font-weight: 600;
-    color: #dedede;
-    text-align: justify;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
 }
-footer .footer-information-container .map{
-    border-radius: 10px;
+.footer-pets-information{
+    text-align: center;
+    grid-column: span 1;
+    grid-row: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:center;
+    padding: 1rem;
 }
-footer .footer-information-container .footer-rights-container{
+.footer-pets-information h5{
+    font-family: Roboto;
+    font-size: 1.7rem;
+    font-weight: 800;
+    color: rgb(255, 248, 220);
+}
+.footer-pets-information p{
+    font-family: Roboto;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+}
+.footer-rights-container{
+    grid-column: 1/4;
+    grid-row: 4/5;
     display: flex;
     justify-content: center;
     align-items: center;
-    grid-column: 1 / 4;
-    grid-row: 4 / 5;
-    font-family: Montserrat;
-    font-size: 1rem;
+}
+.footer-rights-container p{
+    font-family: Roboto;
+    font-size: 1.2rem;
     font-weight: 500;
-    color: #dedede;
+    color: rgb(231, 231, 231);
     text-align: center;
 }
-
-@media screen and (max-width:1280px){
-    .products-section .products-container{
+@media screen and (max-width: 1400px){
+    .products-container{
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-    }
-}
-@media screen and (max-width:1115px){
-    .hero-content-container .hero-card-information {
-        grid-column: 1 / 11;
-        grid-row: 1 / 5;
-        padding: 3rem;
-    }
-    .hero-content-container .hero-card-overview {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 1fr;
-        grid-column: 1 / 11;
-        grid-row: 5 / 7;
-    }
-    .hero-card-overview .overview-card {
-        font-size: 1.3rem;
-    }
-    .services-section{
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(6, 1fr);
-    }
-    .services-section .pet-card{
-        grid-column: 1/4;
-        grid-row: 1/4;
-    }
-    .services-section .educational-card{
-        grid-column: 1/4;
-        grid-row: 4/7;
-    }
-    .services-section .health-card{
-        grid-column: 4/7;
-        grid-row: 1/7;
-    }
-    .hero-card-overview .canines-tag-bg{
-        bottom: -110%;
-    }
-    .hero-card-overview .felines-tag-bg{
-        bottom: -110%;
-    }
-}
-@media screen and (max-width:1100px){
-    .products-section{
-        min-height: 1400px;
-        max-height: 1400px;
-        height: 90vh;
-        width: 100%;
-        margin: 2rem 0 0 0;
-    }
-    .products-section .products-container{
-        grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(4, 1fr);
     }
 }
-@media screen and (max-width:875px){
-    .hero-section {
-        min-height: 1150px;
-        max-height: 1150px;
+@media screen and (max-width: 1300px){
+    .hero-container .hero-information-container{
+        grid-column: 1 / 15;
+        grid-row: 1 / 7;
     }
-    .hero-section .hero-content-container {
-        min-height: 850px;
-        max-height: 850px;
+    .hero-container .hero-cards-container{
+        grid-column: 1 / 15;
+        grid-row: 7 / 9;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
     }
-    .services-section{
-        min-height: 675px;
-        max-height: 675px;
-        grid-template-columns: 1fr;
+    .hero-cards-container .hero-card h3 {
+        font-size: 3rem;
+    }
+    .hero-card img{
+        height: 300px;
+        width: 300px;
+    }
+    .hero-card.hover img{
+        bottom: -15%;
+    }
+    .services-container{
+        grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(6, 1fr);
     }
-    .services-section .pet-card{
-        grid-column: 1/1;
-        grid-row: span 2;
+    .services-container .pet-card{
+        gap: 0.5rem;
+        grid-column: 1/4;
+        grid-row: 1/4;
     }
-    .services-section .educational-card{
-        grid-column: 1/1;
-        grid-row: span 2;
+    .services-container .educational-card{
+        gap: 0.5rem;
+        grid-column: 1/4;
+        grid-row: 4/7;
     }
-    .services-section .health-card{
-        grid-column: 1/1;
-        grid-row: span 2;
-    }
-    .products-section{
-        min-height: 2000px;
-        max-height: 2000px;
-        height: 90vh;
-        width: 100%;
-        margin: 2rem 0 0 0;
-    }
-    .products-section .products-container{
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-    }
-    footer{
-        min-height: 850px;
-        max-height: 850px;
-    }
-    footer .footer-information-container{
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 2fr 2fr 3fr 1fr;
-    }
-    footer .footer-information-container .footer-logo-container{
-        grid-column: span 1;
-        grid-row: span 1;
-    }
-    .footer-information-container .footer-contact-information,.footer-products-information{
-        align-items: center;
-        border-right: none;
-        border-bottom: 2px solid #dedede;
-    }
-    footer .footer-information-container .footer-contact-information,.footer-products-information,.map{
-        grid-column: span 1;
-        grid-row: span 1;
-    }
-    footer .footer-information-container .footer-contact-information{
-        grid-column: span 1;
-        grid-row: 2 / 3;
-    }
-    footer .footer-information-container .footer-products-information{
-        grid-column: span 1;
-        grid-row: 3 / 4;
-    }
-    footer .footer-information-container .footer-rights-container{
-        grid-column: span 1;
-        grid-row: 5 / 6;
+    .services-container .veterinary-card{
+        grid-column: 4/6;
+        grid-row: 1/7;
     }
 }
-@media screen and (max-width:775px){
-    body{
-        padding: 2rem;
+@media screen and (max-width: 1050px){
+    .hero-cards-container .hero-card h3 {
+        font-size: 2.5rem;
     }
-    .products-section{
-        min-height: 2100px;
-        max-height: 2100px;
-        height: 90vh;
-        width: 100%;
-        margin: 2rem 0 0 0;
-    }
-    .products-section .products-container{
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(6, 1fr);
-    }
-    .families-section{
-        max-height: 750px;
-    }
-    .families-section .families-showcase-container {
-        grid-template-columns: repeat(4, 1fr);
-    }
-}
-@media screen and (max-width:715px){
-    .hero-section {
-        min-height: 1450px;
-        max-height: 1450px;
-        height: 90vh;
-    }
-    .hero-section .hero-content-container {
-        min-height: 1150px;
-        max-height: 1150px;
-    }
-    .hero-content-container .hero-card-information {
-        grid-template-rows: repeat(5, 1fr);
-    }
-    .hero-card-information .hero-card-text {
-        align-items: center;
-        justify-content: space-around;
-        grid-row: 1 / 5;
-    }
-    .hero-card-information .hero-card-text h1 {
-        text-align: center;
-    }
-    .hero-card-information .hero-card-text p {
-        text-align: justify;
-    }
-    .hero-card-information .hero-card-media {
-        grid-row: 5 / 6;
-    }
-    .hero-content-container .hero-card-overview {
+    .services-container{
+        min-height: 1050px;
+        max-height: 1050px;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, 1fr);
     }
-    .hero-card-overview .felines-tag-bg{
-        background-position: center;
+    .services-container .pet-card{
+        grid-column: span 1;
+        grid-row: span 1;
     }
-    .hero-card-overview .canines-tag-bg{
-        bottom: -210%;
+    .services-container .educational-card{
+        grid-column: span 1;
+        grid-row: span 1;
     }
-    .hero-card-overview .felines-tag-bg{
-        bottom: -210%;
+    .services-container .veterinary-card{
+        gap: 0.5rem;
+        grid-column: span 1;
+        grid-row: span 1;
     }
-    .services-section{
-        min-height: 800px;
-        max-height: 800px;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 1fr);
+    .footer-information-container {
+        grid-template-rows: 1fr 2fr 2fr 2fr 1fr;
     }
-    .hero-card-overview .overview-card.hover h3 {
-        transform: translateX(400%);
+    .footer-contact-information {
+        grid-row: span 3
+    }
+    .footer-products-information {
+        grid-row: span 3
+    }
+    .footer-pets-information {
+        grid-row: span 3
+    }
+    .footer-rights-container {
+        grid-column: 1 / 4;
+        grid-row: 5/6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
-@media screen and (max-width:675px){
-    .hero-section {
-        min-height: 1550px;
-        max-height: 1550px;
-    }
-    .data-container {
-        min-height: 300px;
-        max-height: 300px;
-    }
-    .products-section{
-        min-height: 2100px;
-        max-height: 2100px;
-        height: 90vh;
-        width: 100%;
-        margin: 2rem 0 0 0;
-    }
-    .products-section .products-container{
+@media screen and (max-width: 950px){
+    .products-container{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(6, 1fr);
     }
 }
-@media screen and (max-width:560px){
-    .products-section{
-        min-height: 2100px;
-        max-height: 2100px;
-        height: 90vh;
-        width: 100%;
-        margin: 2rem 0 0 0;
-    }
-    .products-section .products-container{
-        grid-template-columns: 1fr;
+@media screen and (max-width: 900px){
+    .products-container{
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(6, 1fr);
     }
+    footer {
+        height: 30vh;
+        min-height: 650px;
+        max-height: 650px;
+        width: 100%;
+        background-color: rgb(32, 32, 32);
+        border-radius: 10px;
+        margin-top: 2rem;
+        padding: 1rem 2rem;
+    }
+    .footer-information-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(10, 2fr);
+    }
+    .footer-logo-container{
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    .footer-contact-information {
+        grid-column: span 1;
+        grid-row: span 3;
+        border-top: none;
+        border-right: none;
+        border-bottom: 3px solid rgb(58, 58, 58);
+        border-left: none;
+    }
+    .footer-products-information {
+        grid-column: span 1;
+        grid-row: span 3;
+        border-top: none;
+        border-right: none;
+        border-bottom: 3px solid rgb(58, 58, 58);
+        border-left: none;
+    }
+    .footer-pets-information {
+        grid-column: span 1;
+        grid-row: span 3;
+        border-top: none;
+        border-right: none;
+        border-bottom: 3px solid rgb(58, 58, 58);
+        border-left: none;
+    }
+    .footer-rights-container {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
 }
-@media screen and (max-width:400px){
+@media screen and (max-width: 850px){
+    .hero-container {
+        min-height: 1500px;
+        max-height: 1500px;
+    }
+    .hero-container .hero-information-container{
+        min-height: 900px;
+        max-height: 900px;
+    }
+    .hero-container .hero-cards-container{
+        min-height: 600px;
+        max-height: 600px;
+    }
+    .hero-container .hero-cards-container {
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: 1fr;
+    }
+    .hero-cards-container .hero-card {
+        grid-column: span 1;
+        grid-row: span 2;
+    }
+    .hero-card img{
+        height: 250px;
+        width: 250px;
+        position: absolute;
+        bottom: -125%;
+    }
+    .hero-card.hover img{
+        bottom: -20%;
+    }
+    .hero-card.hover h3{
+        transform: translateX(300%);
+    }
+    .offers-card.hover h3{
+        transform: translateX(120%);
+    }
+}
+@media screen and (max-width: 750px){
+    .hero-information-container .information p {
+        font-size: 1.5rem;
+    }
+    .hero-information-container .information button {
+        font-size: 1.5rem;
+        padding: 1rem 2rem;
+    }
+    .hero-cards-container .hero-card {
+        padding: 1rem;
+    }
+    .general-information-container .paragraph-container p{
+        font-size: 1.3rem;
+    }
+    .products-container{
+        min-height: 2350px;
+        max-height: 2350px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(15, 1fr);
+    }
+}
+@media screen and (max-width: 650px){
     body{
         padding: 1rem;
+    }
+}
+@media screen and (max-width: 490px){
+    .hero-container {
+        min-height: 1300px;
+        max-height: 1300px;
+    }
+    .hero-container .hero-information-container{
+        min-height: 700px;
+        max-height: 700px;
+    }
+    .hero-container .hero-cards-container{
+        min-height: 600px;
+        max-height: 600px;
+    }
+    .hero-information-container .information h1 {
+        font-size: 3rem;
+    }
+    .hero-information-container .information p {
+        font-size: 1.3rem;
+    }
+    .hero-information-container .information button {
+        font-size: 1.3rem;
+        padding: 1rem 2rem;
+    }
+    .hero-cards-container .hero-card {
+        padding: 1rem;
+    }
+    .media .media-icon-holder i{
+        font-size: 3rem;
+    }
+    .general-information-container .paragraph-container p{
+        font-size: 1.3rem;
+    }
+}
+@media screen and (max-width: 490px){
+    .main-content{
+        max-width: 1500px;
+        min-width: 360px;
+        margin: auto;
+    }
+    body{
+        padding: 0.5rem;
+    }
+    .general-information-container .paragraph-container p {
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 430px){
+    .hero-information-container .information h1 {
+        font-size: 2.5rem;
+    }
+    .hero-information-container .information p {
+        font-size: 1.1rem;
+    }
+    .hero-information-container .information button {
+        font-size: 1.1rem;
+        padding: 1rem 1rem;
+    }
+    .hero-cards-container .hero-card h3 {
+        font-size: 2rem;
+    }
+    .media .media-icon-holder i{
+        font-size: 2.5rem;
+    }
+    .services-container {
+        min-height: 1250px;
+        max-height: 1250px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .services-container .service-card {
+        gap: 1.5rem;
+    }
+    .service-card i {
+        font-size: 4rem;
+    }
+    .service-card h4 {
+        font-family: Montserrat;
+        font-size: 1.6rem;
+        font-weight: 800;
+        text-align: center;
+        color: rgb(0, 0, 0);
+    }
+    .service-card p {
+        font-size: 1rem;
+    }
+    .service-card button {
+        font-size: 1rem;
+        padding: 1rem 1rem;
+    }
+    .products-container{
+        min-height: 2550px;
+        max-height: 2550px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(15, 1fr);
     }
 }
