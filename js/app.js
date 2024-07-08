@@ -35,7 +35,7 @@ const changeColor = () =>{
         }
     });
     
-    tl.to('.service-card',{backgroundColor: '#4fa1e9'});
+    tl.to('.service-card',{backgroundColor: 'rgb(255, 225, 93)'});
 }
 
 
@@ -53,12 +53,13 @@ $(document).ready(function(){
             {
                 breakpoint: 1300,
                 settings:{
-                    slidesToShow: 2
+                    slidesToShow: 2,
                 }
             },{
                 breakpoint: 1050,
                 settings:{
-                    slidesToShow: 1
+                    slidesToShow: 1,
+                    centerPadding: '20px',
                 }
             }
         ]
