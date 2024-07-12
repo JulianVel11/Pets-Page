@@ -24,6 +24,7 @@ body{
     border-radius: 10px;
     display: flex;
     align-items: center;
+    position: relative;
 }
 .navbar-container .logo-container{
     height: 100%;
@@ -38,6 +39,12 @@ body{
 .navbar-container .nav-links{
     height: 100%;
     width: 75%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-links ul{
+    width: 100%;
 }
 .navbar-container .nav-links li{
     display: flex;
@@ -50,6 +57,28 @@ body{
     font-weight: 500;
     color: rgb(255, 255, 255);
     text-decoration: none;
+}
+.navbar-container .burguer-menu{
+    position: absolute;
+    right: 5%;
+    display: none;
+    cursor: pointer;
+}
+.navbar-container .burguer-menu div{
+    height: 6px;
+    width: 30px;
+    margin: 5px 0;
+    border-radius: 10px;
+    transition: all 0.8s;
+}
+.burguer-menu  .line-top{
+    background-color: rgb(255, 248, 220);
+}
+.burguer-menu  .line-mid{
+    background-color: rgb(252, 252, 252);
+}
+.burguer-menu  .line-bottom{
+    background-color: rgb(255, 225, 93);
 }
 .hero-container{
     min-height: 990px;
@@ -506,6 +535,12 @@ footer{
     }
 }
 @media screen and (max-width: 1300px){
+    .navbar-container .logo-container {
+        width: 40%;
+    }
+    .navbar-container .nav-links {
+        width: 60%;
+    }
     .hero-container .hero-information-container{
         grid-column: 1 / 15;
         grid-row: 1 / 7;
@@ -546,6 +581,28 @@ footer{
     }
 }
 @media screen and (max-width: 1050px){
+    .navbar-container{
+        padding: 2rem 0;
+    }
+    .navbar-container .burguer-menu{
+        display: block;
+    }
+    .navbar-container .logo-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .navbar-container .nav-links{
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        border-radius: 10px;
+        background-color: rgb(32, 32, 32);
+        padding: 0 2rem;
+        transition: transform 0.8s, border-radius 1s, opacity 0.5s;
+        opacity: 0;
+    }
     .hero-cards-container .hero-card h3 {
         font-size: 2.5rem;
     }
@@ -855,4 +912,18 @@ footer{
         height: 100%;
         width: 100%;
     }
+}
+.toggle .line-top{
+    transform: rotate(45deg) translate(3px, 12px);
+}
+.toggle .line-mid{
+    display: none;
+}
+.toggle .line-bottom{
+    transform: rotate(-45deg) translate(-5px, -6px);
+}
+.nav-active{
+    transform: translateY(70%);
+    border-radius: 0 0 10px 10px !important;
+    opacity: 1 !important;
 }
