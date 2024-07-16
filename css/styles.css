@@ -30,6 +30,9 @@ body{
     height: 100%;
     width: 25%;
 }
+.navbar-container .logo-container a{
+    text-decoration: none;
+}
 .navbar-container .logo-container h1{
     font-family: Montserrat;
     font-size: 2rem;
@@ -53,10 +56,14 @@ body{
 }
 .navbar-container .nav-links a{
     font-family: Roboto;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 500;
     color: rgb(255, 255, 255);
     text-decoration: none;
+    transition: 1s;
+}
+.nav-links a:hover{
+    color: rgb(255, 225, 93);
 }
 .navbar-container .burguer-menu{
     position: absolute;
@@ -803,8 +810,25 @@ footer{
     body{
         padding: 1rem;
     }
+    .navbar-container .nav-links a{
+        font-size: 1.1rem;
+    }
 }
 @media screen and (max-width: 490px){
+    .main-content{
+        max-width: 1500px;
+        min-width: 360px;
+        margin: auto;
+    }
+    body{
+        padding: 0.5rem;
+    }
+    .general-information-container .paragraph-container p {
+        font-size: 1rem;
+    }
+    .navbar-container .nav-links a{
+        font-size: 1rem;
+    }
     .hero-container {
         min-height: 1300px;
         max-height: 1300px;
@@ -837,19 +861,6 @@ footer{
         font-size: 1.3rem;
     }
 }
-@media screen and (max-width: 490px){
-    .main-content{
-        max-width: 1500px;
-        min-width: 360px;
-        margin: auto;
-    }
-    body{
-        padding: 0.5rem;
-    }
-    .general-information-container .paragraph-container p {
-        font-size: 1rem;
-    }
-}
 @media screen and (max-width: 430px){
     .hero-information-container .information h1 {
         font-size: 2.5rem;
@@ -866,6 +877,9 @@ footer{
     }
     .media .media-icon-holder i{
         font-size: 2.5rem;
+    }
+    .navbar-container .nav-links{
+        padding: 0.5rem !important;
     }
     .services-container {
         min-height: 1250px;

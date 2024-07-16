@@ -12,6 +12,7 @@ const showAnimal = () =>{
     });
 }
 
+    // Responsive navbar
 const showMenu = () =>{
     const burgerMenu = document.querySelector('.burguer-menu');
     const linksMenu = document.querySelector('.nav-links');
