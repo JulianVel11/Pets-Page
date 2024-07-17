@@ -20,7 +20,22 @@ const showMenu = () =>{
     })
 };
 
+const showSections = () =>{
+    const dogTag = document.querySelector(".dogs-tag");
+    const catTag = document.querySelector(".cats-tag");
+    const dogSection = document.querySelector(".dog-section-container");
+    const catSection = document.querySelector(".cat-section-container");
 
+    dogTag.addEventListener('click', ()=>{
+        dogSection.classList.toggle('showDogSection');
+        catSection.classList.remove('showCatSection');
+    })
+    catTag.addEventListener('click', ()=>{
+        catSection.classList.toggle('showCatSection');
+        dogSection.classList.remove('showDogSection');
+    })
+}
+showSections();
 showMenu();
 
 }

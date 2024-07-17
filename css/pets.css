@@ -89,7 +89,7 @@ body{
     background-color: rgb(255, 225, 93);
 }
 
-.pets-section{
+.categories-section{
     height: auto;
     width: 100%;
     margin-top: 2rem;
@@ -113,9 +113,93 @@ body{
 }
 .pet-tag .tag-text{
     font-family: Montserrat;
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: 800;
+    text-align: center;
     color: rgb(32, 32, 32);
+}
+
+.pets-section{
+    height: auto;
+    min-height: 680px;
+    width: 100%;
+    margin-top: 2rem;
+    position: relative;
+    border-radius: 10px;
+}
+.dog-section-container{
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+.pets-section .dogs-section{
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    position: absolute;
+    gap: 1rem;
+}
+.dogs-section .dog-tag{
+    height: 100px;
+    grid-column: span 1;
+    grid-row: span 1;
+    background-color: rgb(255, 255, 255);
+    border: 3px solid rgb(32, 32, 32);
+    border-radius: 10px;
+    box-shadow: -4px 4px 0px 0px rgba(0, 0, 0, 0.29);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.dog-tag span{
+    font-family: Roboto;
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(32, 32, 32);
+    text-align: center;
+}
+.cat-section-container{
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+.pets-section .cats-section{
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    position: absolute;
+    gap: 1rem;
+}
+.cats-section .cat-tag{
+    height: 100px;
+    grid-column: span 1;
+    grid-row: span 1;
+    background-color: rgb(255, 255, 255);
+    border: 3px solid rgb(32, 32, 32);
+    border-radius: 10px;
+    box-shadow: -4px 4px 0px 0px rgba(0, 0, 0, 0.29);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.cat-tag span{
+    font-family: Roboto;
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(32, 32, 32);
+    text-align: center;
+}
+.showDogSection{
+    display: block;
+}
+.showCatSection{
+    display: block;
 }
 
 footer{
