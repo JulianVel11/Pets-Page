@@ -45,6 +45,7 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 0 2rem;
 }
 .nav-links ul{
     width: 100%;
@@ -146,6 +147,10 @@ body{
     box-shadow: -4px 4px 0px 0px rgba(0, 0, 0, 0.29);
     cursor: pointer;
     padding: 2rem 4rem;
+    transition: 0.8s;
+}
+.hero-information-container .information button:hover{
+    background-color: rgb(255, 225, 93);
 }
 .hero-information-container .media{
     grid-column: span 1;
@@ -160,6 +165,7 @@ body{
 }
 .media .media-icon-holder i{
     font-size: 3.5rem;
+    cursor: pointer;
 }
 .hero-container .hero-cards-container{
     grid-column: 9/15;
@@ -463,11 +469,12 @@ footer{
     font-weight: 800;
     color: rgb(255, 248, 220);
 }
-.footer-contact-information p{
+.footer-contact-information a{
     font-family: Roboto;
     font-size: 1.2rem;
     font-weight: 500;
     color: rgb(255, 255, 255);
+    text-decoration: none;
 }
 .footer-products-information{
     text-align: center;
@@ -489,11 +496,12 @@ footer{
     font-weight: 800;
     color: rgb(255, 248, 220);
 }
-.footer-products-information p{
+.footer-products-information a{
     font-family: Roboto;
     font-size: 1.2rem;
     font-weight: 500;
     color: rgb(255, 255, 255);
+    text-decoration: none;
 }
 .footer-pets-information{
     text-align: center;
@@ -511,11 +519,12 @@ footer{
     font-weight: 800;
     color: rgb(255, 248, 220);
 }
-.footer-pets-information p{
+.footer-pets-information a{
     font-family: Roboto;
     font-size: 1.2rem;
     font-weight: 500;
     color: rgb(255, 255, 255);
+    text-decoration: none;
 }
 .footer-rights-container{
     grid-column: 1/4;

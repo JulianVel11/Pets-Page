@@ -35,8 +35,23 @@ const showSections = () =>{
         dogSection.classList.remove('showDogSection');
     })
 }
+
+const showPet = () =>{
+    const tags = document.querySelectorAll('.pet-tag')
+
+    tags.forEach(tag => {
+        tag.addEventListener('mouseover', ()=>{
+            tag.classList.add("tag-hover");
+        })
+        tag.addEventListener('mouseleave', ()=>{
+            tag.classList.remove("tag-hover");
+        })
+    });
+}
+
 showSections();
 showMenu();
+showPet();
 
 }
 app();

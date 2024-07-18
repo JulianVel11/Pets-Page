@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-
 *{
     margin: 0;
     padding: 0;
@@ -46,6 +45,7 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 0 2rem;
 }
 .nav-links ul{
     width: 100%;
@@ -121,10 +121,8 @@ body{
 
 .pets-section{
     height: auto;
-    min-height: 680px;
     width: 100%;
     margin-top: 2rem;
-    position: relative;
     border-radius: 10px;
 }
 .dog-section-container{
@@ -132,14 +130,14 @@ body{
     width: 100%;
     display: none;
 }
-.pets-section .dogs-section{
+.dog-section-container .dogs-section{
     height: auto;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    position: absolute;
     gap: 1rem;
+    
 }
 .dogs-section .dog-tag{
     height: 100px;
@@ -153,6 +151,9 @@ body{
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    
 }
 .dog-tag span{
     font-family: Roboto;
@@ -160,6 +161,8 @@ body{
     font-weight: 600;
     color: rgb(32, 32, 32);
     text-align: center;
+    position: absolute;
+    width: 100%;
 }
 .cat-section-container{
     height: 100%;
@@ -171,8 +174,7 @@ body{
     width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    position: absolute;
+    grid-template-rows: repeat(2, 1fr);
     gap: 1rem;
 }
 .cats-section .cat-tag{
@@ -187,6 +189,8 @@ body{
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    position: relative;
+    overflow: hidden;
 }
 .cat-tag span{
     font-family: Roboto;
@@ -194,7 +198,23 @@ body{
     font-weight: 600;
     color: rgb(32, 32, 32);
     text-align: center;
+    position: absolute;
+    width: 100%;
 }
+.pet-tag img{
+    height: 120px;
+    position: absolute;
+    bottom: -150%;
+}
+.pet-tag.tag-hover span{
+    transform: translateX(200%);
+    transition: transform 2s;
+}
+.pet-tag.tag-hover img{
+    transform: translateY(-110%);
+    transition: transform 1s;
+}
+
 .showDogSection{
     display: block;
 }
@@ -374,6 +394,20 @@ footer{
         align-items: center;
     }
 }
+@media screen and (max-width: 950px){
+    .categories-section{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .pets-section .dog-section-container .dogs-section{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+    .pets-section .cat-section-container .cats-section{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
 @media screen and (max-width: 900px){
     footer {
         height: 30vh;
@@ -429,6 +463,14 @@ footer{
     .navbar-container .nav-links a{
         font-size: 1.1rem;
     }
+    .pets-section .dog-section-container .dogs-section{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+    .pets-section .cat-section-container .cats-section{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
 }
 @media screen and (max-width: 490px){
     .main-content{
@@ -441,6 +483,10 @@ footer{
     }
     .navbar-container .nav-links a{
         font-size: 1rem;
+    }
+    .pets-section .cat-section-container .cats-section{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(7, 1fr);
     }
 }
 
