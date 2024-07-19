@@ -42,9 +42,11 @@ const showPet = () =>{
     tags.forEach(tag => {
         tag.addEventListener('mouseover', ()=>{
             tag.classList.add("tag-hover");
+            tag.style.backgroundColor = "rgb(255, 225, 93)";
         })
         tag.addEventListener('mouseleave', ()=>{
             tag.classList.remove("tag-hover");
+            tag.style.backgroundColor = "rgb(252, 252, 252)";
         })
     });
 }

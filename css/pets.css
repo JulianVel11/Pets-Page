@@ -98,7 +98,7 @@ body{
     grid-template-rows: 1fr;
     gap: 1rem;
 }
-.pet-tag{
+.category-tag{
     height: 100px;
     grid-column: span 1;
     grid-row: span 1;
@@ -111,7 +111,7 @@ body{
     border-radius: 10px;
     box-shadow: -4px 4px 0px 0px rgba(0, 0, 0, 0.29);
 }
-.pet-tag .tag-text{
+.category-tag .tag-text{
     font-family: Montserrat;
     font-size: 1.7rem;
     font-weight: 800;
@@ -139,31 +139,6 @@ body{
     gap: 1rem;
     
 }
-.dogs-section .dog-tag{
-    height: 100px;
-    grid-column: span 1;
-    grid-row: span 1;
-    background-color: rgb(255, 255, 255);
-    border: 3px solid rgb(32, 32, 32);
-    border-radius: 10px;
-    box-shadow: -4px 4px 0px 0px rgba(0, 0, 0, 0.29);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-    
-}
-.dog-tag span{
-    font-family: Roboto;
-    font-size: 1rem;
-    font-weight: 600;
-    color: rgb(32, 32, 32);
-    text-align: center;
-    position: absolute;
-    width: 100%;
-}
 .cat-section-container{
     height: 100%;
     width: 100%;
@@ -176,9 +151,9 @@ body{
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 1rem;
-}
-.cats-section .cat-tag{
-    height: 100px;
+} 
+.pet-tag{
+    height: 150px;
     grid-column: span 1;
     grid-row: span 1;
     background-color: rgb(255, 255, 255);
@@ -191,8 +166,9 @@ body{
     cursor: pointer;
     position: relative;
     overflow: hidden;
+    transition: background-color 1.1s ease;
 }
-.cat-tag span{
+.pet-tag span{
     font-family: Roboto;
     font-size: 1rem;
     font-weight: 600;
@@ -202,9 +178,9 @@ body{
     width: 100%;
 }
 .pet-tag img{
-    height: 120px;
+    height: 150px;
     position: absolute;
-    bottom: -150%;
+    bottom: -120%;
 }
 .pet-tag.tag-hover span{
     transform: translateX(200%);
